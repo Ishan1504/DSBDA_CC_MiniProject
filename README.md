@@ -1,1 +1,1 @@
-# DSBDA_CC_MiniProject
+# Diabetes-prediction
