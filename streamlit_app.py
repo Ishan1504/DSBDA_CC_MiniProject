@@ -10,7 +10,11 @@ import seaborn as sns
 # Load the trained model
 pkl_path = Path(__file__).parent / 'PKL_Files/mod.pkl'
 
+# Function to load the trained model
 
+def load_util():
+    model = joblib.load(pkl_path)
+    return model
 
 # Load the dataset
 dataset_path = Path(__file__).parent / 'diabetes_dataset1.csv'
@@ -65,11 +69,7 @@ st.write(df.describe())
 
 
 
-# Function to load the trained model
 
-def load_util():
-    model = joblib.load(pkl_path)
-    return model
 
 
 
